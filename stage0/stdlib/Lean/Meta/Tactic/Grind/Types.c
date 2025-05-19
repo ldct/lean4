@@ -18,6 +18,7 @@ LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_find_x3f___at_Lean_Meta_Grind_
 lean_object* l_Lean_Expr_const___override(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Array_forIn_x27Unsafe_loop___at_Lean_Meta_Grind_markTheoremInstance___spec__8(lean_object*, lean_object*, lean_object*, lean_object*, size_t, size_t, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_reprENode____x40_Lean_Meta_Tactic_Grind_Types___hyg_2719____closed__14;
+LEAN_EXPORT uint64_t l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_GoalM_run___rarg___lambda__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_find_x3f___at_Lean_Meta_Grind_saveEMatchTheorem___spec__1___boxed(lean_object*, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_expandReportIssueMacro___closed__3;
@@ -72,6 +73,7 @@ static lean_object* l_Lean_Meta_Grind_addNewRawFact___closed__7;
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_Goal_getEqc_go___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_reprENode____x40_Lean_Meta_Tactic_Grind_Types___hyg_2719____closed__34;
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_reprENode____x40_Lean_Meta_Tactic_Grind_Types___hyg_2719____closed__51;
+uint64_t l___private_Lean_Meta_Tactic_Grind_EMatchTheorem_0__Lean_Meta_Grind_hashEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1575_(uint8_t);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_reportMVarInternalization___rarg___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_getTarget_x3f___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_updateLastTag___lambda__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -399,7 +401,6 @@ LEAN_EXPORT lean_object* l_Lean_Meta_Grind_grind_warning;
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_saveCases___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Std_DTreeMap_Internal_Impl_forInStep___at_Lean_Meta_Grind_propagateCommRingDiseqs___spec__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_PersistentArray_forInAux___at_Lean_Meta_Grind_forEachEqcRoot___spec__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2___boxed(lean_object*);
 uint64_t lean_uint64_shift_right(uint64_t, uint64_t);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_getGeneration___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_getCongrRoot(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -542,6 +543,7 @@ LEAN_EXPORT lean_object* l_Lean_Meta_Grind_addLookaheadCandidate(lean_object*, l
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_reprENode____x40_Lean_Meta_Tactic_Grind_Types___hyg_2719____closed__43;
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_pushEqTrue(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Std_DTreeMap_Internal_Impl_forInStep___at_Lean_Meta_Grind_propagateCommRingDiseqs___spec__1___lambda__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
+uint8_t l_Lean_Meta_Grind_beqEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1217_(uint8_t, uint8_t);
 lean_object* l_ShareCommon_mkStateImpl(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_markAsOffsetTerm(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_expandReportIssueMacro___lambda__1___closed__31;
@@ -662,6 +664,7 @@ static lean_object* l_Lean_Meta_Grind_doElemReportIssue_x21_______closed__4;
 static lean_object* l_Lean_Meta_Grind_Clean_instInhabitedState___closed__1;
 LEAN_EXPORT uint64_t l_Lean_Meta_Grind_instHashableCongrKey(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind___aux__Lean__Meta__Tactic__Grind__Types______macroRules__Lean__Meta__Grind__doElemTrace__goal_x5b___x5d______1___lambda__1(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4___boxed(lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_reprENode____x40_Lean_Meta_Tactic_Grind_Types___hyg_2719____closed__23;
 lean_object* l_Lean_MessageData_ofExpr(lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_copyParentsTo(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
@@ -716,7 +719,6 @@ static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_
 static lean_object* l_Lean_Meta_Grind___aux__Lean__Meta__Tactic__Grind__Types______macroRules__Lean__Meta__Grind__doElemTrace__goal_x5b___x5d______1___lambda__1___closed__15;
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_SplitInfo_getExpr(lean_object*);
 LEAN_EXPORT lean_object* l_Std_DTreeMap_Internal_Impl_forInStep___at_Lean_Meta_Grind_copyParentsTo___spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT uint64_t l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(lean_object*);
 lean_object* lean_grind_mk_eq_proof(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 uint8_t l_Lean_Expr_isFalse(lean_object*);
 static lean_object* l_Lean_Meta_Grind___aux__Lean__Meta__Tactic__Grind__Types______macroRules__Lean__Meta__Grind__doElemTrace__goal_x5b___x5d______1___lambda__1___closed__29;
@@ -987,7 +989,6 @@ static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_
 lean_object* lean_st_ref_set(lean_object*, lean_object*, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_isCongruent___lambda__3___closed__2;
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_findAtAux___at_Lean_Meta_Grind_saveEMatchTheorem___spec__3(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-uint64_t l___private_Lean_Meta_Tactic_Grind_EMatchTheorem_0__Lean_Meta_Grind_hashEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1721_(uint8_t);
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_findAux___at_Lean_Meta_Grind_mkHCongrWithArity___spec__6(lean_object*, size_t, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_mkENode___lambda__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 static lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_congrHash___closed__1;
@@ -999,7 +1000,6 @@ LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_G
 static lean_object* l_Lean_PersistentHashMap_insertAux___at_Lean_Meta_Grind_saveEMatchTheorem___spec__5___closed__1;
 LEAN_EXPORT lean_object* l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_expandReportIssueMacro___lambda__1(lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Array_idxOfAux___at_Lean_Meta_Grind_resetParentsOf___spec__3___boxed(lean_object*, lean_object*, lean_object*);
-uint8_t l_Lean_Meta_Grind_beqEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1363_(uint8_t, uint8_t);
 LEAN_EXPORT lean_object* l_Lean_Meta_Grind_foldEqc___rarg(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* l_Lean_PersistentHashMap_findAux___at_Lean_Meta_Grind_saveEMatchTheorem___spec__2(lean_object*, size_t, lean_object*);
 LEAN_EXPORT uint64_t l___private_Lean_Meta_Tactic_Grind_Types_0__Lean_Meta_Grind_hashRoot_unsafe__1(lean_object*);
@@ -1586,7 +1586,7 @@ return x_10;
 else
 {
 uint8_t x_11; 
-x_11 = l_Lean_Meta_Grind_beqEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1363_(x_4, x_6);
+x_11 = l_Lean_Meta_Grind_beqEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1217_(x_4, x_6);
 return x_11;
 }
 }
@@ -1629,7 +1629,7 @@ x_5 = l_Lean_Meta_Grind_Origin_key(x_2);
 x_6 = l_Lean_Name_hash___override(x_5);
 lean_dec(x_5);
 x_7 = lean_uint64_mix_hash(x_4, x_6);
-x_8 = l___private_Lean_Meta_Tactic_Grind_EMatchTheorem_0__Lean_Meta_Grind_hashEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1721_(x_3);
+x_8 = l___private_Lean_Meta_Tactic_Grind_EMatchTheorem_0__Lean_Meta_Grind_hashEMatchTheoremKind____x40_Lean_Meta_Tactic_Grind_EMatchTheorem___hyg_1575_(x_3);
 x_9 = lean_uint64_mix_hash(x_7, x_8);
 return x_9;
 }
@@ -11291,7 +11291,7 @@ x_3 = lean_box_uint64(x_2);
 return x_3;
 }
 }
-LEAN_EXPORT uint64_t l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(lean_object* x_1) {
+LEAN_EXPORT uint64_t l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(lean_object* x_1) {
 _start:
 {
 size_t x_2; size_t x_3; size_t x_4; uint64_t x_5; 
@@ -11302,11 +11302,11 @@ x_5 = lean_usize_to_uint64(x_4);
 return x_5;
 }
 }
-LEAN_EXPORT lean_object* l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2___boxed(lean_object* x_1) {
+LEAN_EXPORT lean_object* l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4___boxed(lean_object* x_1) {
 _start:
 {
 uint64_t x_2; lean_object* x_3; 
-x_2 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(x_1);
+x_2 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(x_1);
 lean_dec(x_1);
 x_3 = lean_box_uint64(x_2);
 return x_3;
@@ -11325,7 +11325,7 @@ else
 {
 lean_object* x_8; uint64_t x_9; uint64_t x_10; size_t x_11; size_t x_12; 
 x_8 = lean_array_uget(x_3, x_5);
-x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(x_8);
+x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(x_8);
 lean_dec(x_8);
 x_10 = lean_uint64_mix_hash(x_6, x_9);
 x_11 = 1;
@@ -14771,7 +14771,7 @@ else
 {
 lean_object* x_8; uint64_t x_9; uint64_t x_10; size_t x_11; size_t x_12; 
 x_8 = lean_array_uget(x_3, x_5);
-x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(x_8);
+x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(x_8);
 lean_dec(x_8);
 x_10 = lean_uint64_mix_hash(x_6, x_9);
 x_11 = 1;
@@ -14795,7 +14795,7 @@ else
 {
 lean_object* x_8; uint64_t x_9; uint64_t x_10; size_t x_11; size_t x_12; 
 x_8 = lean_array_uget(x_3, x_5);
-x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(x_8);
+x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(x_8);
 lean_dec(x_8);
 x_10 = lean_uint64_mix_hash(x_6, x_9);
 x_11 = 1;
@@ -15958,7 +15958,7 @@ else
 {
 lean_object* x_8; uint64_t x_9; uint64_t x_10; size_t x_11; size_t x_12; 
 x_8 = lean_array_uget(x_3, x_5);
-x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__2(x_8);
+x_9 = l_Lean_Meta_Grind_instHashablePreInstance_unsafe__4(x_8);
 lean_dec(x_8);
 x_10 = lean_uint64_mix_hash(x_6, x_9);
 x_11 = 1;
